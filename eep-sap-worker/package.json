@@ -1,0 +1,18 @@
+{
+  "name": "eep-sap-worker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node eep-sap-worker"
+  },
+  "dependencies": {
+    "amqp": "*",
+    "request-json": "*",
+    "request": "*"
+  },
+  "main": "eep-sap-worker.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
