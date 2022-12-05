@@ -13,8 +13,8 @@ exports.msg_timeout = 30000;
 exports.amqp_server_username = "admin";
 exports.amqp_server_password = "2Rb!t1Mq";
 // PRODUZIONE
-//exports.amqp_server_username    = "admin";
-//exports.amqp_server_password    = "1Rb!t7Mq";
+// exports.amqp_server_username = "admin";
+// exports.amqp_server_password = "1Rb!t7Mq";
 
 // SMTP data settings
 //exports.smtp_host = "smtp://ngiexch03";
