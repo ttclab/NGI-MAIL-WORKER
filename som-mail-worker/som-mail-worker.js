@@ -6,7 +6,7 @@ var smtpTransport = require('nodemailer-smtp-transport');
 var cons = require('consolidate');
 var config = require('./config');
 var globals = require('./globals');
-var templateDir = "/usr/local/ttc/tcp/workers/eep-mail-worker/email-templates/";
+var templateDir = "/usr/local/ttc/tcp/workers/som-mail-worker/email-templates/";
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
@@ -157,8 +157,6 @@ function createEmailEventObject(msg) {
     var command;
 
     displayMsgReceivedFromQueue(msg);
-
-    emailParams.from = "noreply@tcp-notifier.it";
     command = jsonParam.command;
     console.log("Command: " + command);
     switch (command) {
@@ -204,6 +202,8 @@ function sendEmail(emailEventJson, mailHtml) {
             subject: emailEventJson.subject,
             html: mailHtml
         };
+
+        console.log('mail options : ' + JSON.stringify(mailOptions));
 
         // send mail with defined transport object
         transporter.sendMail(mailOptions, function (error, info) {

@@ -6,7 +6,7 @@ var smtpTransport = require('nodemailer-smtp-transport');
 var cons = require('consolidate');
 var config = require('./config');
 var globals = require('./globals');
-var templateDir = "/usr/local/ttc/tcp/workers/eep-mail-worker/email-templates/";
+var templateDir = "/usr/local/ttc/tcp/workers/mta-mail-worker/email-templates/";
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
