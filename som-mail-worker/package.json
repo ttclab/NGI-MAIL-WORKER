@@ -8,11 +8,10 @@
   "dependencies": {
     "amqp": "^0.2.6",
     "consolidate": "^0.15.1",
-    "nodemailer": "^4.6.4",
+    "nodemailer": "^4.7.0",
     "nodemailer-smtp-transport": "^2.7.4"
   },
   "main": "eep-mail-worker.js",
-  "devDependencies": {},
   "author": "Marco Nanni",
   "license": "ISC",
   "description": ""
