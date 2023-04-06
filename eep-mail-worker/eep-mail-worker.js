@@ -354,6 +354,13 @@ function createEmailEventObject(msg) {
             emailParams.subject = "RFP Richiesta EXTRA TIME";
             emailParams.template = templateDir + 'workflowExtratime.html';
             break;
+        case globals.RDA_NO_BUDGET:
+            emailParams.service = command;
+            emailParams.from = globals.SERVICE_EMAIL;
+            emailParams.to = jsonParam.data.mailList;
+            emailParams.subject = "Errore RFQ/RDA per superamento Budget";
+            emailParams.template = templateDir + 'rdaNoBudget.html';
+            break;
         case globals.WORKFLOW_APS_CREATO:
             emailParams.service = command;
             emailParams.from = globals.SERVICE_EMAIL;

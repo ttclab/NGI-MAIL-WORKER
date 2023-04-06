@@ -70,6 +70,8 @@ exports.ALLEGATO4_INSERT = 'insertAllegato4';
 exports.WORKFLOW_CREATO = 'creazioneWorkflow';
 exports.RFF_RILASCIATA_EEP = 'rfpRilasciataEep';
 exports.WORKFLOW_REMINDER = 'workflowReminder';
+exports.RDA_NO_BUDGET = 'rdaNoBudget';
+
 
 exports.WORKFLOW_SEND_NOTE_MAIL = 'sendNoteByMailWorkflow';
 exports.WORKFLOW_EXTRATIME = 'extraTimeWorkflow';
