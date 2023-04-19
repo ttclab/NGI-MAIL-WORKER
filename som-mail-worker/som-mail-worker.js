@@ -18,6 +18,11 @@ var amqp_options = {
   heartbeat: config.amqp_heartbeat,
   login: config.amqp_server_username,
   password: config.amqp_server_password,
+  ssl: {
+      enabled: true,
+      verify: false,
+      rejectUnauthorized : false
+  }
 };
 // Connection to RabbitMQ
 var amqp_connection = amqp.createConnection(amqp_options);
