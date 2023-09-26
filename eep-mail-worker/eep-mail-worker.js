@@ -368,6 +368,41 @@ function createEmailEventObject(msg) {
       emailParams.subject = "RFP Eliminata";
       emailParams.template = templateDir + "rfpDeleted.html";
       break;
+    case globals.UPDATE_WF_EMENDAMENTO:
+      emailParams.service = command;
+      emailParams.from = globals.SERVICE_EMAIL;
+      emailParams.to = jsonParam.data.mailList;
+      emailParams.subject = "Workflow Avanzato (Emendamento)";
+      emailParams.template = templateDir + "emeWfAvanzato.html";
+      break;
+    case globals.FINE_WF_EMENDAMENTO_ELIMINAZIONE:
+      emailParams.service = command;
+      emailParams.from = globals.SERVICE_EMAIL;
+      emailParams.to = jsonParam.data.mailList;
+      emailParams.subject = "Posizione ODA Eliminata (Emendamento)";
+      emailParams.template = templateDir + "emePosizioneEliminata.html";
+      break;
+    case globals.FINE_WF_EMENDAMENTO_MODIFICA:
+      emailParams.service = command;
+      emailParams.from = globals.SERVICE_EMAIL;
+      emailParams.to = jsonParam.data.mailList;
+      emailParams.subject = "Posizione ODA Modificata (Emendamento)";
+      emailParams.template = templateDir + "emePosizioneModificata.html";
+      break;
+    case globals.CREAZIONE_WF_EMENDAMENTO_ELIMINAZIONE:
+      emailParams.service = command;
+      emailParams.from = globals.SERVICE_EMAIL;
+      emailParams.to = jsonParam.data.mailList;
+      emailParams.subject = "Workflow per eliminazione Posizione ODA (Emendamento)";
+      emailParams.template = templateDir + "emeWfEliminazioneAvviata.html";
+      break;
+    case globals.CREAZIONE_WF_EMENDAMENTO_MODIFICA:
+      emailParams.service = command;
+      emailParams.from = globals.SERVICE_EMAIL;
+      emailParams.to = jsonParam.data.mailList;
+      emailParams.subject = "Workflow per modifica Posizione ODA (Emendamento)";
+      emailParams.template = templateDir + "emeWfModificaAvviata.html";
+      break;
     case globals.WORKFLOW_APS_CREATO:
       emailParams.service = command;
       emailParams.from = globals.SERVICE_EMAIL;

@@ -73,6 +73,13 @@ exports.WORKFLOW_REMINDER = "workflowReminder";
 exports.RDA_NO_BUDGET = "rdaNoBudget";
 exports.RFP_DELETED = "rfpDeleted";
 
+exports.UPDATE_WF_EMENDAMENTO = "updateWorkflowEmendamento";
+exports.FINE_WF_EMENDAMENTO_ELIMINAZIONE = "wfEliminazioneEmendamentoFinito";
+exports.FINE_WF_EMENDAMENTO_MODIFICA = "wfModificaEmendamentoFinito";
+exports.CREAZIONE_WF_EMENDAMENTO_ELIMINAZIONE = "workflowEmendamentoEliminazioneCreato";
+exports.CREAZIONE_WF_EMENDAMENTO_MODIFICA = "workflowEmendamentoModificaCreato";
+
+
 exports.WORKFLOW_SEND_NOTE_MAIL = "sendNoteByMailWorkflow";
 exports.WORKFLOW_EXTRATIME = "extraTimeWorkflow";
 
